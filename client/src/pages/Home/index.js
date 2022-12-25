@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <div className="bg-primary px-40">
+      <div className="bg-primary lg:px-40 sm:px-5 xs:px-3">
         <Intro />
         <About />
       </div>

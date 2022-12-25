@@ -21,7 +21,7 @@ function About() {
         <div className="w-1/2">
           <img src={img} alt="pics of Moroti" />
         </div>
-        <div className="flex flex-col gap-5 w-1/2">
+        <div className="flex flex-col gap-5 w-1/2 sm:w-full">
           <p className="text-white px-5">
             Hello! My name is Moroti Sonde. I enjoy creating new things that
             resides on the internet. My expertise lies within backend web
