@@ -2,6 +2,18 @@ import React from "react";
 import SectionTitle from "../../components/SectionTitle";
 import img from "../../images/Moroti_Sonde.jpg";
 function About() {
+  const skills = [
+    "Javascript",
+    "React",
+    "Node",
+    "Express",
+    "MongoDB",
+    "PSQL",
+    "Java",
+    "Python",
+    "Firebase",
+    "SQL",
+  ];
   return (
     <div>
       <SectionTitle title="About" />
@@ -20,6 +32,16 @@ function About() {
             I'm a life long learner and always ready to collaborate on new
             projects. Here are few technologies I've been working with recently:
           </p>
+        </div>
+      </div>
+      <div className="py-5">
+        <h1 className="text-tertiary text-xl">Tech Stacks: </h1>
+        <div className="flex flex-wrap gap-10 mt-5">
+          {skills.map((skill, index) => (
+            <div className="border border-tertiary py-3 px-10">
+              <h1 className="text-tertiary">{skill}</h1>
+            </div>
+          ))}
         </div>
       </div>
     </div>
